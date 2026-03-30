@@ -1,0 +1,157 @@
+.welcome-section {
+  padding: 100px 20px;
+  text-align: center;
+  background-color: transparent;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  position: relative;
+  top: -80px;
+}
+
+.welcome-text h1 {
+  font-size: 64px; /* Increased for emphasis */
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.welcome-text p {
+  font-size: 28px; /* Bigger for readability */
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.image-circle-group {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.circle-image {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+  border: 6px solid #d1d1d1;
+  transition: transform 0.3s ease;
+}
+
+.circle-image.large {
+  width: 180px;
+  height: 180px;
+  border-width: 8px;
+}
+
+.circle-image.larger {
+  width: 210px;
+  height: 210px;
+  border-width: 10px;
+}
+
+.circle-image.largest {
+  width: 240px;
+  height: 240px;
+  border-width: 12px;
+}
+
+.circle-image:hover {
+  transform: scale(1.08);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .welcome-text h1 {
+    font-size: 40px;
+  }
+
+  .welcome-text p {
+    font-size: 22px;
+    line-height: 1.6;
+  }
+
+  .circle-image,
+  .circle-image.large,
+  .circle-image.larger,
+  .circle-image.largest {
+    width: 110px;
+    height: 110px;
+    border-width: 5px;
+  }
+
+  .image-circle-group {
+    gap: 20px;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 370px) {
+  .welcome-text h1 {
+    font-size: 32px;
+  }
+
+  .welcome-text p {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: 1650px) {
+  .welcome-text h1 {
+    font-size: 72px;
+  }
+
+  .welcome-text p {
+    font-size: 32px;
+    max-width: 1000px;
+  }
+
+  .circle-image {
+    width: 180px;
+    height: 180px;
+  }
+
+  .circle-image.large {
+    width: 210px;
+    height: 210px;
+  }
+
+  .circle-image.larger {
+    width: 240px;
+    height: 240px;
+  }
+
+  .circle-image.largest {
+    width: 270px;
+    height: 270px;
+  }
+}
+@media (max-width: 600px) {
+  .welcome-section {
+    padding: 0px 5px;
+  }
+  .welcome-text h1 {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+  .welcome-text p {
+    font-size: 16px;
+    max-width: 98vw;
+    padding: 0 4px;
+    line-height: 1.4;
+  }
+  .image-circle-group {
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  .circle-image,
+  .circle-image.large,
+  .circle-image.larger,
+  .circle-image.largest {
+    width: 70px;
+    height: 70px;
+    border-width: 3px;
+  }
+}

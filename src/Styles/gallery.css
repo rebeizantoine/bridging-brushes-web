@@ -1,0 +1,110 @@
+/* Gallery Component Styling */
+.gallery-home {
+  align-items: center;
+  margin-top: 0px;
+  background-image: url("../Images/dannie2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 0px !important;
+  border-radius: 10px;
+}
+
+.gallery-home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: -1;
+}
+
+/* Ensure that the content inside .gallery-home remains visible */
+.gallery-home > * {
+  position: relative;
+  z-index: 2;
+}
+
+.title-gallery-home {
+  color: white;
+  font-size: 55px;
+  letter-spacing: 1px; /* Adjusted spacing for better readability */
+}
+
+.top-123 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.top-123 h1 {
+  margin-bottom: 81px;
+  text-align: center;
+  color: #b89d4f;
+}
+
+.gallery-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+  /* border: 2px solid #b89d4f;  */
+  border-radius: 10px; /* Rounded corners for the border */
+  /* background-color: rgba(255, 255, 255, 0.8);  */
+  padding: 20px; /* Padding inside the box */
+}
+
+.gallery-section .text-box {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.gallery-section .image-gallery1,
+.gallery-section .image-gallery2 {
+  flex: 1;
+}
+
+.gallery-section img {
+  width: 700px !important;
+  height: 650px;
+
+  border-radius: 10px; /* Rounded corners for the image */
+  transition: transform 0.3s ease;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.text-box {
+  line-height: 30px;
+  letter-spacing: 1.2px;
+  font-size: 20px;
+  color: #b89d4f; /* Change text color to black for better contrast */
+  text-align: left;
+  font-family: "Neue Montreal" !important;
+}
+.text-box p {
+  color: #f4f4f9 !important;
+}
+.date-time,
+.location,
+.host,
+.description,
+.featured-artists {
+  margin-bottom: 10px;
+  color: #b89d4f;
+}
+
+/* Add a hover effect for images */
+.image-gallery1 img:hover,
+.image-gallery2 img:hover {
+  cursor: pointer;
+  transform: scale(1.05); /* Slightly increase scale on hover */
+}
+.gallery-title {
+  color: #b89d4f;
+}

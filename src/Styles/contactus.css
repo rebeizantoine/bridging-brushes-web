@@ -1,0 +1,129 @@
+/* ContactUs component styles */
+
+.contactus-container123 {
+  background: #111222;
+  padding: 50px;
+}
+
+.contactus-inner-container123 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contactus-main-title123 {
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.contactus-section-title123 {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.contactus-content123 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.contactus-image123 {
+  width: 100%;
+  max-width: 300px; /* Set max-width for images */
+  margin-bottom: 20px; /* Add some margin for spacing */
+}
+
+.contactus-image123 img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.contactus-info123 {
+  max-width: 500px;
+}
+
+.contactus-info123 h3 {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.contactus-info123 p {
+  font-size: 18px;
+  color: #ccc;
+}
+
+.contactus-form-box123 {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  padding: 20px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.contactus-form-box123 form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactus-form-box123 label {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.contactus-form-box123 input,
+.contactus-form-box123 textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #222;
+  color: #fff;
+}
+
+.contactus-form-box123 input:focus,
+.contactus-form-box123 textarea:focus {
+  border-color: #555;
+  outline: none;
+}
+
+.contactus-form-box123 textarea {
+  height: 100px;
+  resize: vertical;
+  max-height: 200px; /* Limit the height */
+  min-height: 100px; /* Minimum height */
+}
+
+.contactus-form-box123 button {
+  padding: 10px;
+  font-size: 18px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contactus-form-box123 button:hover {
+  background-color: #555;
+}
+
+.contactus-media-icons123 {
+  margin-top: 30px;
+}
+
+.contactus-icon123 {
+  color: #fff;
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+.contactus-icon123:hover {
+  color: #ccc;
+}

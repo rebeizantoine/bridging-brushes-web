@@ -1,0 +1,45 @@
+/* PdfViewerMobile.css */
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .pdf-viewer-container {
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    border-radius: 0;
+    padding: 0;
+    overflow-y: scroll; /* Allow scrolling vertically for pages */
+  }
+
+  .pdf-viewer {
+    width: 100%; /* Adjust to mobile width */
+    height: 100%; /* Ensure full height is used */
+    overflow: hidden; /* Prevent horizontal scrolling */
+  }
+
+  /* Style the individual pages */
+  .rpv-core__page-layer {
+    width: 100% !important; /* Ensure page takes up full width */
+    height: 100% !important; /* Ensure page takes up full height */
+    max-width: 100% !important; /* Prevent page from overflowing horizontally */
+    margin: 0 auto; /* Center the page horizontally */
+    display: block;
+    box-sizing: border-box;
+    margin-left: -50px;
+  }
+
+  /* Style the canvas elements for each page */
+  .rpv-core__canvas-layer {
+    width: 100% !important; /* Ensure canvas takes up full width */
+    height: 100% !important; /* Ensure canvas takes up full height */
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* Specific styles for individual images (canvases) */
+  canvas {
+    width: 100% !important; /* Allow canvas to scale to screen size */
+    height: 100% !important; /* Ensure canvas fills the height */
+    display: block;
+    margin: 0 auto;
+  }
+}

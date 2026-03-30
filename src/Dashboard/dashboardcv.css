@@ -1,0 +1,104 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #f5ebe0;
+  color: #846f63;
+  border: 2px solid #846f63;
+  border-radius: 35px;
+  padding: 30px 40px;
+  max-width: 800px; /* Increase the width as needed */
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.modal-content h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Styling for the form inside the modal */
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+}
+
+.edit-form label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.edit-form input,
+.edit-form textarea {
+  flex: 1;
+  margin-left: 10px;
+  padding: 10px;
+  border: 1px solid #846f63;
+  border-radius: 5px;
+}
+
+.edit-form textarea {
+  height: 150px; /* Adjust height if necessary */
+  resize: vertical;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-top: 20px;
+}
+
+.modal-buttons button {
+  background-color: #846f63;
+  border: 2px solid #846f63;
+  color: #f5ebe0;
+  padding: 10px 20px;
+  border-radius: 35px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.modal-buttons button:hover {
+  background-color: transparent;
+  color: #846f63;
+}
+.remove-pdf-btn {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.remove-pdf-btn:hover {
+  color: darkred;
+}

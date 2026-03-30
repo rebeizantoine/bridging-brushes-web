@@ -1,0 +1,59 @@
+/* multiple.css */
+
+.background-container {
+  /* Replace 'your-background-image.jpg' with the path to your image */
+  background-color: #080404;
+  background-image: url("../Images/Picture1.png");
+
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* For smooth scrolling effect */
+  background-size: cover;
+  background-position: center;
+  /*  overflow-y: scroll; */
+  -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+  min-height: 100vh;
+  padding: 20px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+/* Optional: Add shadow to your components */
+.component-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding: 0px;
+  /* background: rgba(255, 255, 255, 0.8);  */
+  border-radius: 5px;
+  margin: 20px;
+}
+
+.component-shadow:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 600px) {
+  .component-shadow {
+    margin: 0px !important;
+    width: 100%;
+    padding: 0px;
+  }
+  .gallery-section {
+    padding: 0px !important;
+    height: 660px !important;
+  }
+
+  .gallery-title {
+    justify-content: center !important;
+    text-align: center;
+  }
+  .text-box {
+    justify-content: center !important;
+    text-align: center;
+  }
+  .gallery-section img {
+    display: none !important;
+  }
+  .image-gallery2 {
+    width: 50px;
+    display: block !important;
+  }
+}

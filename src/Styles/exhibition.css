@@ -1,0 +1,85 @@
+.exhibitions-page {
+  font-family: "Libre Baskerville", sans-serif;
+  color: white;
+  background-color: #1f1f1f; /* Background color */
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh; /* Ensure the page takes at least the full viewport height */
+}
+
+.header {
+  padding: 20px 0;
+  width: 100%;
+}
+
+.title {
+  font-size: 3em; /* Adjust the font size as needed */
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: white; /* Ensure the text is white */
+}
+
+.search-bar {
+  width: 80%;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.exhibitions-section {
+  width: 80%; /* Fixed width */
+  max-width: 800px; /* Ensure it doesn't get too wide */
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.exhibition-button {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.exhibition-button:hover {
+  transform: scale(1.05);
+}
+.exhibitions-page {
+  align-items: center;
+  margin-top: 0px;
+  background-image: url("../Images/dannie3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 40px !important;
+}
+@media (max-width: 600px) {
+  .search-bar {
+    border: 4px solid #b89d4f;
+    font-size: 20px !important;
+  }
+  /* .exhibitions-page {
+    margin-bottom: 100px !important;
+  } */
+}

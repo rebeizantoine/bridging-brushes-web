@@ -1,0 +1,253 @@
+/* Overall container */
+.single-artist-container {
+  display: flex;
+  justify-content: space-between; /* Keeps the left and right aligned */
+  align-items: flex-start; /* Align content to the top */
+  gap: 20px; /* Reduces the gap between the artist and slider */
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  color: #f6f0e6 !important;
+
+  /* Add outer shadow */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+    /* Regular outer shadow */ inset 0 0 5px rgba(255, 255, 255, 0.2); /* Inner shadow for border highlight */
+
+  margin-top: -2%;
+  margin-bottom: 2%;
+}
+
+/* Main artist section */
+.single-artist {
+  flex: 1; /* Takes available width for responsiveness */
+  max-width: 600px;
+  padding-right: 20px;
+  border-right: 1px solid #ddd; /* Separation between artist and slider */
+  color: #f6f0e6 !important;
+}
+
+/* Title styling */
+.single-artist__title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #f6f0e6;
+}
+.contact-info2 {
+  max-width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  box-shadow: none;
+}
+.contact-info2 {
+  width: 100%;
+  left: 55%;
+}
+/* Divider styling */
+.single-artist__divider {
+  margin: 10px 0;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+/* Image wrapper styling */
+.single-artist__image-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.single-artist__image {
+  width: 300px;
+  max-height: 350px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Info section styling */
+.single-artist__info {
+  text-align: center;
+}
+
+.single-artist__description,
+.single-artist__exhibitions,
+.single-artist__highlights {
+  font-size: 1rem;
+  line-height: 1.6;
+  /* color: #555; */
+  margin: 10px 0;
+}
+
+/* Slider container styling */
+.slider-container {
+  flex: 1;
+  max-width: 400px;
+  padding-left: 20px;
+}
+
+/* Slider item */
+.slider-item {
+  text-align: center;
+}
+
+.slider-image {
+  width: 300px; /* Fixed width */
+  height: 200px; /* Fixed height */
+  object-fit: cover; /* Ensures the image fits within the box */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  max-height: 450px;
+}
+
+/* Description styling */
+.slider-description {
+  font-size: 0.9rem;
+  color: #f6f0e6;
+  margin-top: 5px;
+}
+.contact-info {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1e1e1e;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  padding-top: 0px;
+}
+
+.contact-info__title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #f6f0e6;
+}
+
+.contact-info__icons {
+  display: flex;
+  gap: 10px;
+}
+
+.contact-info__icon {
+  font-size: 1.5rem;
+  color: #f6f0e6;
+  transition: color 0.3s ease;
+}
+
+.contact-info__icon:hover {
+  color: #007bff; /* Change to a brighter color on hover */
+}
+.contact-info2 {
+  position: absolute;
+  bottom: 145px;
+  right: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1e1e1e;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  /* padding: 15px; */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  /* min-width: 100px !important; */
+  max-height: 90px;
+}
+.contact-info2 button {
+  width: auto !important;
+}
+@media (max-width: 400px) {
+  /* Main container adjustments */
+  .single-artist-container {
+    flex-direction: column; /* Stack elements vertically */
+    max-width: 100%;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  /* Adjust the main artist section */
+  .single-artist {
+    max-width: 100%;
+    padding-right: 0;
+    border-right: none;
+  }
+
+  /* Title and description */
+  .single-artist__title {
+    font-size: 1.4rem; /* Slightly smaller title */
+  }
+
+  .single-artist__description,
+  .single-artist__exhibitions {
+    font-size: 0.9rem; /* Smaller font for mobile */
+    line-height: 1.4;
+    margin: 5px 0;
+  }
+
+  /* Adjust image size */
+  .single-artist__image {
+    width: 100%; /* Full width for smaller screens */
+    max-width: 300px; /* Maintain some size on small screens */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  /* Slider container adjustments */
+  .slider-container {
+    max-width: 100%;
+    padding-left: 0;
+  }
+
+  .slider-image {
+    width: 100%; /* Full width for mobile */
+    height: 200px; /* Fixed height */
+  }
+
+  .slider-description {
+    font-size: 0.8rem; /* Smaller description text */
+  }
+
+  /* Contact info adjustments */
+  .contact-info,
+  .contact-info2 {
+    position: relative; /* Adjust positioning for small screens */
+    bottom: auto;
+    right: auto;
+    max-width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    box-shadow: none;
+  }
+  .contact-info2 {
+    width: 100%;
+    /* left: 25%; */
+    top: 10px;
+    left: 0%;
+  }
+
+  .contact-info__icons {
+    flex-wrap: wrap; /* Stack icons on small screens */
+    justify-content: center;
+  }
+
+  .contact-info__icon {
+    font-size: 1.2rem; /* Smaller icons */
+    margin: 5px;
+  }
+
+  /* Button adjustments */
+  .contact-info2 button {
+    width: 100%; /* Full-width button on small screens */
+    font-size: 1rem; /* Larger button text */
+    padding: 10px;
+  }
+}

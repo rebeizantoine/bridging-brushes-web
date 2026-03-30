@@ -1,0 +1,51 @@
+@media (min-width: 1700px) {
+  .sa-all {
+    position: relative;
+    left: 450px;
+    width: 70%;
+  }
+  .sa {
+    background-image: url("../Images//dannie.jpg");
+    background-size: cover; /* Ensure the image covers the entire element */
+    background-position: center; /* Center the image */
+  }
+  .bottom-sa {
+    font-size: 17px;
+    margin-top: 10px;
+    margin-bottom: 150px;
+    max-width: 600px;
+    border: 2px solid rgba(255, 255, 255, 0.7); /* White border with slight opacity */
+    border-radius: 8px; /* Rounded corners for the border */
+    padding: 10px; /* Add some padding inside the border */
+    opacity: 1; /* Full opacity for the container */
+    background: rgba(
+      0,
+      0,
+      0,
+      0.2
+    ); /* Semi-transparent background for visibility */
+  }
+  .bottom-sa p {
+    background: rgba(
+      0,
+      0,
+      0,
+      0.8
+    ); /* Solid black background with opacity for the text */
+    color: #846f63;
+    padding: 10px; /* Padding for the text background */
+    border-radius: 4px; /* Rounded corners for the text background */
+  }
+  .painting-info-sa h3 {
+    color: #000000 !important;
+    max-width: 600px;
+    width: 400px;
+    text-align: center;
+  }
+  .footer3-sa {
+    display: none;
+  }
+  .button-sa {
+    position: absolute;
+  }
+}

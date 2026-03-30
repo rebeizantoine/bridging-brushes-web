@@ -1,0 +1,59 @@
+.section-container3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-title3 {
+  font-size: 2.5em; /* Adjust the font size as needed */
+  color: white; /* White color for the title */
+  margin-bottom: 20px;
+  font-family: Libre Baskerville, sans-serif; /* Use the Rubik font */
+}
+
+.image-container3 {
+  display: flex;
+  justify-content: center; /* Center the images horizontally */
+  flex-wrap: wrap; /* Allow images to wrap to the next line */
+  gap: 20px; /* Space between images */
+}
+
+.image-item3 {
+  max-width: 250px; /* Set the maximum width for each image container */
+  padding: 10px; /* Adjust this to control spacing around images */
+  position: relative; /* For absolute positioning of the text */
+}
+.image-item3:hover {
+  cursor: pointer;
+}
+.image-wrapper3 {
+  position: relative;
+  overflow: hidden; /* Ensure the image doesn't overflow the container */
+}
+
+.image-container3 img {
+  width: 100%; /* Ensure the image fits within the container */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s ease; /* Smooth zoom-in effect */
+}
+
+.image-item3:hover img {
+  transform: scale(1.1); /* Zoom-in effect */
+}
+
+.image-text3 {
+  position: absolute;
+  bottom: 10px; /* Adjust this as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  color: white; /* Text color */
+  padding: 5px 10px;
+  border-radius: 5px;
+  opacity: 0; /* Hide text by default */
+  transition: opacity 0.3s ease;
+  text-align: center; /* Center the text */
+}
+
+.image-item3:hover .image-text3 {
+  opacity: 1; /* Show text on hover */
+}

@@ -1,0 +1,367 @@
+.header-box {
+  position: relative; /* Or fixed, depending on design */
+  z-index: 10; /* Higher than 1 */
+}
+
+.header-ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+}
+.navigado {
+  box-shadow: none !important;
+  background-color: transparent !important; /* Transparent background */
+  font-size: 2rem !important;
+}
+
+nav {
+  background-color: transparent !important; /* Transparent background */
+}
+
+.header-ul li,
+a {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 130px !important;
+  margin-top: 1.5%;
+  text-decoration: none;
+  color: #ffffff !important;
+}
+nav ul a {
+  font-size: 1.2rem !important;
+}
+nav ul a:hover {
+  color: #fff !important;
+}
+:root {
+  primary: #fff !important;
+}
+
+.header-ul a:hover {
+  cursor: pointer;
+  color: #d4a373 !important; /* Use a softer coral shade */
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.header-all {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  background-color: transparent !important; /* Transparent background */
+  font-family: "Poppins", sans-serif;
+  color: #1f1f1f !important;
+}
+
+.header-1 {
+  margin-left: 150px;
+}
+
+.header-1 nav {
+  background-color: transparent !important; /* Transparent background */
+}
+
+.header-2 {
+  width: 200px;
+  margin-left: 12%;
+  display: flex;
+  color: #ffffff !important;
+}
+
+.header-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  width: 0px !important;
+}
+
+.weird-blue {
+  color: #ffffff !important;
+}
+
+.weird-blue:hover {
+  color: orangered !important;
+  cursor: pointer;
+}
+
+.h4-header {
+  margin-top: -5px;
+}
+
+.box-near-header {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+@keyframes logoFadeInZoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.steel-city {
+  width: 200px;
+  height: auto;
+  margin-left: 100px;
+  margin-top: -40px;
+  animation: logoFadeInZoom 1s ease-out forwards;
+}
+
+.steel-city:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(1.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+.header-title {
+  animation: fade-down 1s 0.4s ease-in-out backwards;
+}
+
+.sidebar123 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.8
+  ); /* Make background darker for visibility */
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px;
+  overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+.menu-button {
+  display: none;
+}
+
+.sidebar123 li {
+  width: 100%;
+}
+
+.sidebar123 a {
+  width: 100%;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+.sidebar123 a:hover {
+  background-color: #333;
+}
+.logo-intro {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 109vh;
+  background-color: #171717;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  overflow-x: hidden; /* prevent horizontal overflow */
+  overflow-y: hidden; /* keep vertical overflow hidden */
+  pointer-events: none;
+  animation: containerFadeOut 3.5s ease-in-out forwards;
+  overflow: hidden !important;
+  position: relative;
+  left: -52px;
+  top: -100px;
+}
+
+.intro-logo {
+  width: 60vw;
+  max-width: 600px; /* optional max width */
+  height: auto;
+  animation: logoFloatUp 3.5s ease-in-out forwards;
+  margin: 0 auto; /* center horizontally */
+  display: block; /* for margin auto to work */
+  transform-origin: center bottom; /* to keep scaling balanced */
+}
+
+@keyframes logoFloatUp {
+  0% {
+    opacity: 0;
+    transform: scale(0.95) translateY(40px);
+  }
+  20% {
+    opacity: 1;
+    transform: scale(1) translateY(0px);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05) translateY(-10px);
+  }
+  75% {
+    opacity: 0.9;
+    transform: scale(1.02) translateY(-30px);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.9) translateY(-60px);
+  }
+}
+
+@media (max-width: 600px) {
+  .hideOnMobile {
+    display: none !important;
+  }
+
+  .bigger-1 {
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    padding-top: 80px;
+  }
+
+  .bigger-1 ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bigger-1 li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  .bigger-1 li:nth-child(1) {
+    margin-left: -200px;
+  }
+
+  .bigger-1 a {
+    width: 100%;
+    height: 50px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 18px;
+  }
+
+  .bigger-1 a:hover {
+    background-color: #f0f0f0;
+  }
+
+  .sidebar123 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-button {
+    display: block !important;
+    position: absolute;
+    left: 20px;
+    top: 60px;
+  }
+
+  .header-title {
+    margin-left: 30px;
+  }
+
+  .steel-city {
+    max-width: 800px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1000px) {
+  .header-all {
+    margin-left: -80px;
+  }
+
+  .header-1 a {
+    font-size: 20px;
+  }
+
+  .ui-input {
+    margin-left: 10px !important;
+  }
+
+  .steel-city {
+    max-width: 120px !important;
+  }
+
+  .header-center {
+    max-width: 500px !important;
+    margin-left: 40px !important;
+    background-color: none !important;
+  }
+
+  .hideOnMobile {
+    display: block !important;
+  }
+}
+@media (min-width: 1001px) and (max-width: 1700px) {
+  .header-ul {
+    position: absolute;
+    right: 10%;
+  }
+  .header-ul li a {
+    font-size: 22px !important;
+  }
+}
+@media (min-width: 1701px) {
+  .header-1 {
+    width: 100%;
+    margin-left: 200px;
+  }
+  .header-ul li a {
+    font-size: 28px !important;
+    width: 180px !important;
+  }
+}

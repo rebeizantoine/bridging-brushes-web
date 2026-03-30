@@ -1,0 +1,208 @@
+.email-signup-container {
+  background: none no-repeat center center;
+  background-size: cover;
+  padding-left: 40px;
+  padding-right: 40px;
+  color: white;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh;
+  margin-top: 0px;
+  flex-direction: column; /* Stack content vertically on mobile */
+}
+
+.stay-in-loop {
+  font-size: 30px;
+  position: relative;
+}
+
+.contact-info1-1 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.signup-content1 {
+  text-align: left; /* Center the text */
+  display: flex;
+  flex-direction: row; /* Arrange items side by side on desktop */
+  color: #fff !important;
+  max-width: 1000px; /* Optional: Limit the width of the content */
+  padding: 20px; /* Optional: Add some padding for spacing */
+  background-color: rgba(8, 4, 4, 1); /* Optional: Add a background color */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+.signup-content1 p h2 {
+  color: #fff !important;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.email-input {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  color: #ccc;
+}
+
+.signup-button {
+  padding: 10px 20px;
+  background-color: #ccc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* .signup-button:hover {
+  background-color: #0056b3;
+} */
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info-a {
+  color: #406f77 !important;
+  text-decoration: underline !important;
+}
+
+.social-icons {
+  position: relative;
+  top: 230px;
+}
+
+.social-icons p {
+  position: relative;
+  left: 15px;
+}
+
+.flex-social-icons {
+  width: 200px;
+  display: flex;
+  justify-content: space-between; /* Ensure icons are spaced out evenly */
+}
+
+.social-icon {
+  margin: 0 10px;
+  font-size: 24px;
+  color: #333;
+}
+
+.social-icon:hover {
+  color: #007bff;
+}
+.footer-branding {
+  text-align: center;
+  padding: 10px 0;
+  background-color: transparent; /* Optional: Adjust the color to match your design */
+  font-size: 14px;
+  color: #406f77;
+  position: relative;
+  margin-top: -4%;
+}
+
+/* Media Query for mobile responsiveness */
+@media (max-width: 768px) {
+  .email-signup-container {
+    max-width: 390px;
+    margin-top: -30px;
+    margin-bottom: 0px !important;
+  }
+  .signup-content1 {
+    max-width: 390px;
+    flex-direction: column; /* Stack the content vertically on mobile */
+    align-items: center; /* Center align content */
+    padding: 20px 10px; /* Add some padding for mobile */
+  }
+
+  .stay-in-loop {
+    font-size: 24px; /* Smaller font for mobile */
+  }
+
+  .email-input {
+    width: 100%; /* Make the input full-width */
+  }
+
+  .signup-button {
+    width: 40%; /* Make the button full-width */
+    margin-top: 0px;
+  }
+
+  .social-icons {
+    position: relative;
+    top: 0; /* Reset positioning */
+    margin-top: 20px; /* Add space above the icons */
+    left: 30px;
+    max-width: 100%;
+  }
+  .social-icons p {
+    margin-bottom: 10px;
+    /* left: 15px; */
+    max-width: 80%;
+  }
+
+  .flex-social-icons {
+    width: auto; /* Allow social icons to wrap */
+    justify-content: center; /* Center icons on mobile */
+  }
+
+  .social-icon {
+    margin: 0 15px; /* Add space between icons */
+  }
+  .flex-social-icons {
+    width: 360px !important;
+    justify-content: center;
+    margin-left: -40px;
+  }
+  .contact-info-a {
+    font-size: 18px;
+  }
+  .signup-button {
+    /* width: 40%; */
+    margin-top: 0px;
+  }
+  .footer-branding {
+    width: 100vw;
+    text-align: center; /* Ensure text stays centered on smaller screens */
+    font-size: 12px; /* Optional: Adjust font size for better readability on phones */
+  }
+}
+@media (min-width: 1650px) {
+  .email-signup-container {
+    height: 60vh;
+  }
+}
+@media (max-width: 370px) {
+  .flex-social-icons {
+    width: 360px !important;
+    justify-content: center;
+    margin-left: -40px;
+  }
+  .contact-info-a {
+    font-size: 18px;
+  }
+  .signup-button {
+    /* width: 40%; */
+    margin-top: 0px;
+  }
+}
+@media (min-width: 1650px) {
+  .email-signup-container {
+    height: 60vh;
+  }
+}
+@media (min-width: 1650px) {
+  .email-signup-container {
+    height: 60vh;
+  }
+}

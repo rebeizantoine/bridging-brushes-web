@@ -1,0 +1,11 @@
+.hero5-container {
+  width: 100%;
+  height: 400px;
+  position: absolute; /* Positions it relative to the document */
+  top: 0; /* Ensures it starts from the top */
+  z-index: 1; /* Places it behind other elements */
+  background-image: url("../Images/Picture1.png");
+  background-size: cover; /* Ensures the image covers the container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
